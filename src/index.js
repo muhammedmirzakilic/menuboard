@@ -1,7 +1,5 @@
 import "./index.css";
-
-const log = () => {
-  console.log("It's working");
-};
-
-log();
+import "./assets/hamburger.png";
+import "./assets/promotion-menu-burger.png";
+import "./assets/promotion-menu-burger1.png";
+import "./assets/sushi-background.png";
