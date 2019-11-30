@@ -165,11 +165,35 @@ ul {
     background-color: #034078;
 }
 
-.sushi-menu {
+#bus {
+    position: absolute;
+    left: -100%;
+    top: 25%;
+    animation: animate-bus 5s;
+}
+
+.bus-menu-container {
     display: flex;
+    flex: 1;
+    height: 100%;
     flex-direction: row;
-    background-image: url("./assets/sushi-background.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bus-menu-container .sushi-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bus-menu-container .sushi-item .price {
+    background-color: black;
+    font-size: 44px;
+    padding: 15px 60px;
+    border: 1px;
+    border-radius: 20px;
+    margin-top: 5px;
+    color: white;
 }
