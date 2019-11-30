@@ -99,6 +99,7 @@ ul {
     justify-content: center;
     align-items: center;
     color: white;
+    transform: translateY(100%);
 }
 
 .promo-menu .promo-item .title {
@@ -168,7 +169,10 @@ ul {
 #bus {
     position: absolute;
     left: -100%;
-    top: 25%;
+    top: calc(2160px + 10%);
+}
+
+#bus.animate-bus {
     animation: animate-bus 5s;
 }
 
@@ -196,4 +200,102 @@ ul {
     border-radius: 20px;
     margin-top: 5px;
     color: white;
+}
+
+.bus-menu-container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bus-menu-container .sushi-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.bus-menu-container .sushi-item .price {
+    background-color: black;
+    font-size: 44px;
+    padding: 15px 60px;
+    border: 1px;
+    border-radius: 20px;
+    margin-top: 5px;
+    color: white;
+}
+
+#chopstick-top {
+    animation: animate-top-chopstick 2s infinite;
+}
+
+
+#chopstick-bottom {
+    animation: animate-bottom-chopstick 2s infinite;
+}
+
+#left-sushi,
+#right-sushi {
+    transition: 5s;
+    transform: rotateZ(360deg);
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes animate-bottom-chopstick {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(2deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes animate-top-chopstick {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(-2deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes animate-bus {
+    0% {
+        transform: translateX(calc(-100%));
+    }
+
+    25% {
+        transform: translateX(calc(200% + 280px));
+    }
+
+    50% {
+        transform: translateX(calc(200% + 720px));
+    }
+
+    75% {
+        transform: translateX(calc(200% + 1200px));
+    }
+
+    90% {
+        transform: translateX(calc(200% + 1620px));
+    }
+
+    100% {
+        transform: translateX(calc(200% + 1920px));
+    }
 }
