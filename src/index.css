@@ -6,6 +6,7 @@ body {
     padding: 0;
     overflow: hidden;
     line-height: 1.4;
+    font-family: monospace;
 }
 
 ul {
@@ -46,7 +47,7 @@ ul {
 
 .burger-menu .menu-items .burger-title {
     line-height: 1.4;
-    font-size: 57px;
+    font-size: 92px;
 }
 
 .burger-menu .menu-items ul {
