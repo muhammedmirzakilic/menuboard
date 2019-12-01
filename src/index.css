@@ -53,6 +53,10 @@ ul {
     font-size: 52px;
 }
 
+.burger-menu .menu-items .burger-item {
+    transform: translateX(-1000px);
+}
+
 .burger-menu .menu-image-container {
     flex: 2;
     flex-direction: column;
